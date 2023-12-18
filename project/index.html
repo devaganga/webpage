@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Sidebar Menu | CodingLab</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">Planwo</div>
+
+      <div class="search-bar">
+        <img src="search.avif"  class="search-icon" />
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <div class="notification-container">
+        <img src="noti.png"onclick="toggleNotificationBox()">
+          
+
+        <div id="notificationBox" class="notification-box">
+
+            <div class="notiheader">
+                <p>NOTIFICATIONS</p>
+            </div>
+            <div class="noti1"> 
+              <div class="noti1head">
+                <img src="pp1.jpg" />
+                <h5>Jessie Samson</h5>
+              </div>
+             <p>created an event</p>
+            </div>
+            <div class="noti1"> 
+                <div class="noti1head">
+                  <img src="pp2.jpg" />
+                  <h5>Jessie Samson</h5>
+                </div>
+               <p>created an event</p>
+              </div>
+              <div class="noti1"> 
+                <div class="noti1head">
+                  <img src="pp3.webp" />
+                  <h5>Jessie Samson</h5>
+                </div>
+               <p>created an event</p>
+              </div>
+          
+         
+        </div>
+      </div>
+
+      <div class="grid-container">
+        
+          <img src="grid.png" onclick= "toggleGridBox()">
+    
+
+        <div id="gridBox" class="grid-box">
+          
+            <img src="w1.jpeg" alt="Image 1" />
+            <img src="w2.png" alt="Image 2" />
+            <img src="w3.png" alt="Image 3" /> <br />
+
+          <img src="w1.jpeg" alt="Image 1" />
+          <img src="w2.png" alt="Image 2" />
+          <img src="w3.png" alt="Image 3" /> <br />
+
+          <img src="w1.jpeg" alt="Image 1" />
+          <img src="w2.png" alt="Image 2" />
+          <img src="w3.png" alt="Image 3" />
+        </div>
+      </div>
+
+      <div class="profile-container">
+        
+            <img src="ppmain.webp"  onclick="toggleProfileCard()">
+        
+
+        <div id="profileCard" class="profile-card">
+            <img src="ppmain.webp"  class="profile-photo">
+            <h4>Natasha</h4>
+            <div class="profile-textbox">
+                <input type="text" placeholder="Update your status...">
+            </div>
+            <div class="profile-buttons">
+                <button>
+                    <img src="icon1.jpg" > <b>Profile</b>
+                </button>
+                <button>
+                    <img src="icon2.png" > <b>Dashboard</b>
+                </button>
+                <button>
+                    <img src="icon3.png" > <b>Activity</b>
+                </button>
+                <button>
+                    <img src="icon4.png" > <b>Settings</b>
+                </button>
+                <button>
+                    <img src="icon5.png" > <b>Help</b>
+                </button>
+            </div>
+            <div class="profile-buttons-new">
+                <button>
+                    <img src="icon6.png" alt="Icon 1"> <b>Sign out</b>
+                </button>
+            </div>
+        </div>
+        
+
+        
+      </div>
+    </div>
+
+    <div class="chat-box">
+        
+            <button id="chatButton" onclick="toggleChatBox()">
+                <p>chat demo</p> <img src="green.png"  />
+              </button>
+       
+      
+ 
+      <div id="chatBox" class="chat-content">
+
+        <div class="chatheader"> 
+            <p>demo widget</p>
+            <img src="green.png">
+        </div>
+
+        <div class="chatbody">
+            <img src="pp1.jpg">
+            <h6>Wanda</h6>
+            <p>Ask us anything-we'll get back to you</p>
+
+        </div>
+        <div class="chatbutton">
+            <button>
+                <p>I need help</p><img src="msg.jpeg" > 
+            </button>
+            <button>
+                <p>I cant order</p> <img src="msg.jpeg" > 
+            </button>
+            <button>
+                <p>How to place order</p>  <img src="msg.jpeg" >
+            </button>
+            <button>
+                <p>Payment issue</p> <img src="msg.jpeg" >
+            </button>
+           
+        </div>
+        <div class="chatbuttonnew">
+            <button>
+                <p>Write a message</p><img src="cam.png" >
+                
+            </button>
+            <div class="cbnimg"> <img src="msg.jpeg" > </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      
+      <ul class="nav-list">
+       
+        <li>
+          <a href="#">
+            <i class='bx bx-cart'></i>
+            <span class="links_name">E commerce</span>
+          </a>
+          <span class="tooltip">E commerce</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-phone'></i>
+            <span class="links_name">CRM</span>
+          </a>
+          <span class="tooltip">CRM</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-notepad' ></i>
+              <span class="links_name">Project management</span>
+            </a>
+            <span class="tooltip">Project management</span>
+          </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-chat' ></i>
+            <span class="links_name">Chat</span>
+          </a>
+          <span class="tooltip">Chat</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-tag' ></i>
+            <span class="links_name">Event</span>
+          </a>
+          <span class="tooltip">Event</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-envelope' ></i>
+            <span class="links_name">Email</span>
+          </a>
+          <span class="tooltip">Email</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-bar-chart-square'></i>
+            <span class="links_name">Kanban</span>
+          </a>
+          <span class="tooltip">Kanban</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-share-alt' ></i>
+            <span class="links_name">Social</span>
+          </a>
+          <span class="tooltip">Social</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bxs-calendar' ></i>
+            <span class="links_name">Calendar</span>
+          </a>
+          <span class="tooltip">Calendar</span>
+        </li>
+        <li>
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="links_name">Starter</span>
+            </a>
+            <span class="tooltip">Starter</span>
+          </li>
+          <li>
+            <a href="#">
+                <i class='bx bx-question-mark' ></i>
+              <span class="links_name">FAQ</span>
+            </a>
+            <span class="tooltip">FAQ</span>
+          </li>
+          <li>
+            <a href="#">
+                <i class='bx bx-world'></i>
+              <span class="links_name">Landing</span>
+            </a>
+            <span class="tooltip">Landing</span>
+          </li>
+          <li>
+            <a href="#">
+                <i class='bx bx-wallet-alt' ></i>
+              <span class="links_name">Pricing</span>
+            </a>
+            <span class="tooltip">Pricing</span>
+          </li>
+          <li>
+            <a href="#">
+                <i class='bx bx-bell' ></i>
+              <span class="links_name">Notification</span>
+            </a>
+            <span class="tooltip">Notification</span>
+          </li>
+          <li>
+            <a href="#">
+                <i class='bx bxs-user' ></i>
+              <span class="links_name">Member</span>
+            </a>
+            <span class="tooltip">Members</span>
+          </li>
+          <li>
+            <a href="#">
+                <i class='bx bx-error-circle' ></i>
+              <span class="links_name">Error</span>
+            </a>
+            <span class="tooltip">Error</span>
+          </li>
+          <li>
+            <a href="#">
+                <i class='bx bx-lock-alt' ></i>
+              <span class="links_name">Authentication</span>
+            </a>
+            <span class="tooltip">Authentication</span>
+          </li>
+          
+
+
+
+        <div class="logo-details">
+            <i class="bx bxl-c-plus-plus icon"></i>
+            <div class="logo_name">Collapse</div>
+            <i class='bx bx-directions' id="btn"></i>
+          </div>
+        
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="text">Dashboard</div>
+    </section>
+
+    <div class="main-content">
+      <h1>Ecommerce Dashboard</h1>
+      <p>Here is whats going on at your business right now</p>
+      <div class="image-container">
+        <img src="green.png" alt="57 new orders" />
+        <p>57 new order</p>
+        <img src="yellow.jpeg" alt="5 order" />
+        <p>5 order</p>
+        <img src="Red.jpg" alt="15 product" />
+        <p>15 product</p>
+      </div>
+    </div>
+
+    <hr style="margin-left: 280px; margin-right: 20px; margin-top: 20px" />
+
+    <div class="new-title">
+      <div>
+        <h2>Total sells</h2>
+        <p>payment recieved across all channels</p>
+      </div>
+      <div class="dropdown-container">
+        <div class="dropdown">
+          <select>
+            <option value="option1">Mar 1 - 30,2023</option>
+            <option value="option2">Sept 1 - 30 2022</option>
+            <option value="option3">Dec 1 - 30 2022</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="graph">
+      <img src="graph1.jpg" />
+    </div>
+
+    <div class="grid">
+      <div class="grid-item">
+        <img src="graph2.jpg" />
+      </div>
+      <div class="grid-item">
+        <img src="graph3.jpg" />
+      </div>
+      <div class="grid-item">
+        <img src="graph4.jpg" />
+      </div>
+      <div class="grid-item">
+        <img src="graph5.jpg" />
+      </div>
+    </div>
+
+    <hr style="margin-left: 280px; margin-right: 20px; margin-top: 20px" />
+    <div class="new-section">
+      <h2>Latest reviews</h2>
+      <p>Payment received across all channels.</p>
+  
+      <div class="new-search-bar">
+      </p>
+          <input type="text" placeholder="Search">
+          <input type="text" placeholder="All products">
+          <input type="text" placeholder="...">
+      </div>
+  
+  
+  <table class="product-table">
+    <thead>
+        <tr>
+            <th>Tickbox</th>
+            <th>Product</th>
+            <th>Customer</th>
+            <th>Rating</th>
+            <th>Review</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td><img src="item1.jpeg"  width="20" height="20"> Fibit sense smartwatch </td>
+            <td><img src="cust1.jpeg"  width="20" height="20"> Richard</td>
+            <td>5</td>
+            <td>Great product!</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td><img src="item2.jpeg"  width="20" height="20"> iPhone 13 pro max</td>
+            <td><img src="cust2.jpeg"  width="20" height="20"> Ashley</td>
+            <td>3.8</td>
+            <td>Needs improvement.Late delivery</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td><img src="item3.jpeg"  width="20" height="20"> Apple macbook pro</td>
+          <td><img src="cust3.jpeg"  width="20" height="20"> Woodrow</td>
+          <td>4.2</td>
+          <td>Very good.Ontime.</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td><img src="item4.jpeg"  width="20" height="20"> iPhone 15 pro max</td>
+        <td><img src="cust4.jpeg"  width="20" height="20"> Eric</td>
+        <td>4</td>
+        <td>.Late delivery</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox"></td>
+      <td><img src="item5.jpeg"  width="20" height="20"> Playstation 5</td>
+      <td><img src="cust5.jpeg"  width="20" height="20"> Barbara</td>
+      <td>5</td>
+      <td>Loved it!!</td>
+  </tr>
+        
+    </tbody>
+  </table>
+  </div>
+  
+  <div class="two-columns-section">
+    <div class="column">
+        <h3>Column 1</h3>
+  
+      
+  <table class="product-table">
+    <thead>
+        <tr>
+            
+            <th>Country</th>
+            <th>User</th>
+            <th>TRansactions</th>
+            <th>Revenue</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            
+            <td><img src="c1.png"  width="20" height="20" > India</td>
+            <td> 96543</td>
+            <td>67</td>
+            <td>$7880</td>
+        </tr>
+        <tr>
+           
+            <td><img src="c2.png"  width="20" height="20" > China</td>
+            <td>68002</td>
+            <td>54</td>
+            <td>$6875</td>
+        </tr>
+        <tr>
+         
+          <td><img src="c3.jpeg"  width="20" height="20" > USA</td>
+          <td> 45006</td>
+          <td>42</td>
+          <td>$5227</td>
+      </tr>
+      <tr>
+        
+        <td><img src="c4.png"  width="20" height="20" > Vietnam</td>
+        <td>21998</td>
+        <td>22</td>
+        <td>$3285</td>
+    </tr>
+    <tr>
+        
+      <td><img src="c5.png"  width="20" height="20" > Sri lanka</td>
+      <td> 21998</td>
+      <td>19</td>
+      <td>$2745</td>
+  </tr>
+  <tr>
+        
+    <td><img src="c6.png"  width="20" height="20" > Saudi arabia</td>
+    <td> 21998</td>
+    <td>19</td>
+    <td>$2745</td>
+</tr>
+ 
+  </tbody>
+  </table>
+  </div>
+  
+    <div class="column">
+        <img src="map.jpeg" style="width: 600px; height: 360px;">
+    </div>
+    
+  </div>
+  
+  <div class="newgrid">
+    <div class="newgrid-item">
+      <h2> Projectiom vs actual</h2>
+      <img src="graph2.jpg">
+    </div>
+    <div class="newgrid-item">
+      <h2> Returning customer rate</h2>
+      <img src="graph3.jpg">
+    </div>
+
+    <script>
+
+function toggleProfileCard() {
+        var profileCard = document.getElementById("profileCard");
+        profileCard.style.display = (profileCard.style.display === "block") ? "none" : "block";
+      }
+
+      function toggleNotificationBox() {
+        var notificationBox = document.getElementById("notificationBox");
+        notificationBox.style.display =
+          notificationBox.style.display === "block" ? "none" : "block";
+      }
+      
+      function toggleGridBox() {
+        var gridBox = document.getElementById("gridBox");
+        gridBox.style.display =
+          gridBox.style.display === "block" ? "none" : "block";
+      }
+      function toggleChatBox() {
+        var chatBox = document.getElementById("chatBox");
+        chatBox.style.display =
+          chatBox.style.display === "block" ? "none" : "block";
+      }
+
+      let sidebar = document.querySelector(".sidebar");
+      let closeBtn = document.querySelector("#btn");
+      let searchBtn = document.querySelector(".bx-search");
+
+      closeBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+        menuBtnChange(); 
+      });
+
+      searchBtn.addEventListener("click", () => {
+        
+        sidebar.classList.toggle("open");
+        menuBtnChange(); 
+      });
+
+      
+      function menuBtnChange() {
+        if (sidebar.classList.contains("open")) {
+          closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); 
+        } else {
+          closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); 
+        }
+      }
+    </script>
+  </body>
+</html>
